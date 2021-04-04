@@ -1,0 +1,36 @@
+
+#kep{
+	max-width: 65%;
+	max-height: 65%;
+	min-width: 65%;
+	min-height: 65%;
+
+	margin:20px auto;
+	border-radius: 8px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.tim{
+
+	font-size: 18px;
+	border: 2px solid #AD235E;
+	border-radius: 10px;
+	width: 25px;
+	height: 25px; background: url(media/volume.jpg);
+	background-size: auto;
+
+}
+.playerButtons{
+
+    display: inline-block;
+
+}
+#musicname{
+    font-family: 'SketchFlow Print';
+    color:rgb(201, 213, 231);
+
+
+}

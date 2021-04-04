@@ -1,0 +1,64 @@
+#myContainer {
+    max-width:1000px;
+	min-width:500px;
+	min-height: 500px;
+    height: auto;
+    position: relative;
+    background-image: url("../media/grass.jpg");
+    background-size: contain;
+    
+    overflow: hidden;
+    
+  }
+  #points{
+    font-family: "Verdana";
+    font-size: medium;
+    position: relative;
+    background: rgba(71, 114, 84, 0.76);
+  
+
+  }
+  #animation {
+    width: 100px;
+    height: 100px;
+  /*  position: absolute;*/
+    background-image: url("../media/rabbit.gif");
+    background-repeat:no-repeat;
+    background-size:contain;
+    transform: translate3d(50px,50px,0);
+    transition:  transform .3s ease-in;
+  }
+
+  #carrot {
+    width: 50px;
+    height: 50px;
+  /*  position: absolute;*/
+    background-image: url("../media/carrot.gif");
+    background-repeat:no-repeat;
+    background-size:contain;
+
+  }
+  #fox{
+
+    width: 100px;
+    height: 100px;
+  /*  position: absolute;*/
+    background-image: url("../media/basket.gif");
+    background-repeat:no-repeat;
+    background-size:contain;
+    transform: translate3d(50px,50px,0);
+    transition:  transform .3s ease-in;
+  }
+
+  #highScore,h2{
+    background:rgba(172, 173, 75, 0.76);
+    font-family: "Verdana";
+    font-size: large;
+    border:0px dotted  gray;
+    box-shadow:0 0 30px black;	
+    padding:5px 5px 5px 5px; 
+    display: flex;
+align-items: center;
+    max-width: 30%;
+    margin-left: 35%;
+  }
