@@ -4,7 +4,7 @@ var container = null;
 var Points =0;
 var foxHealth = 0;
 var gametime;
-var gameTimer = 30000;
+var gameTimer = 5000;
 var first = true;
 var interval;
 
@@ -46,15 +46,13 @@ function GameEnd(){var obj = JSON.parse(data);
       elementtemp = element;
     }
 });
-reload();
+reload(obj);
 
 }
-function reload(){
-  const fs = require('fs')
-  const FileSystem = require("fs");
-    FileSystem.writeFile('txt/hghscr.json', JSON.stringify(proj), (error) => {
-    if (error) throw error;
-  });
+function reload(jsonObj){
+
+  localStorage.setItem('../txt/hghscr.json', JSON.stringify(jsonObj));
+
   gethighScore();
 }
 
@@ -76,7 +74,7 @@ function timeR(){
 }
 function setUsername(jsonObj,id, point,name) {
   for (var i = 0; i < jsonObj.length; i++) {
-    if (jsonObj[i].id === id) {
+    if (jsonObj[i].id == id) {
       jsonObj[i].name = name;
       jsonObj[i].score = point;
      
